@@ -31,7 +31,10 @@ module.exports = new Confidence.Store({
         plugins: [
             {
                 plugin: '../lib', // Main plugin
-                options: {}
+                options: {
+                    // Use this to initialize the RoomService with data
+                    initRooms: process.env.INIT_ROOMS
+                }
             },
             {
                 plugin: {
