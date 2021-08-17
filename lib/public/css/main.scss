@@ -19,12 +19,29 @@ a {
     color: white;
 }
 
+#canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
 .room {
     .taco-cursor {
         opacity: 0.3;
         position: absolute;
         width: 80px;
         height: 80px;
+        transform: translate(-50%, -50%);
+        background-image: url('/public/taco.png');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        pointer-events: none;
+    }
+    .taco-particle {
+        position: absolute;
         transform: translate(-50%, -50%);
         background-image: url('/public/taco.png');
         background-position: center;
