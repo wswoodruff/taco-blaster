@@ -1,0 +1,38 @@
+// This is for the tacos
+* {
+    cursor: none;
+}
+
+body {
+    color: white;
+    background-color: black;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 50px;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+a {
+    font-size: 20px;
+    color: white;
+}
+
+.room {
+    .taco-cursor {
+        opacity: 0.3;
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        transform: translate(-50%, -50%);
+        background-image: url('/public/taco.png');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        pointer-events: none;
+    }
+    #my-taco {
+        opacity: 1;
+    }
+}

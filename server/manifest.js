@@ -19,11 +19,11 @@ module.exports = new Confidence.Store({
         debug: {
             $filter: 'NODE_ENV',
             $default: {
-                log: ['error', 'start'],
+                log: ['error', 'start', 'log'],
                 request: ['error']
             },
             production: {
-                request: ['implementation']
+                request: ['implementation', 'log']
             }
         }
     },
@@ -33,7 +33,12 @@ module.exports = new Confidence.Store({
                 plugin: '../lib', // Main plugin
                 options: {
                     // Use this to initialize the RoomService with data
-                    initRooms: process.env.INIT_ROOMS
+                    initRooms: process.env.INIT_ROOMS,
+                    developmentMode: {
+                        $filter: { $env: 'NODE_ENV' },
+                        $default: true,
+                        production: false
+                    }
                 }
             },
             {
