@@ -5,14 +5,20 @@ body {
   color: white;
   background-color: black;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding: 50px; }
+  padding: 20px; }
 
 h1 {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  position: absolute; }
 
 a {
   font-size: 20px;
-  color: white; }
+  color: white;
+  position: absolute; }
+
+#connectionMsg {
+  position: absolute;
+  top: 80px; }
 
 #canvas {
   position: absolute;
@@ -21,32 +27,33 @@ a {
   right: 0;
   bottom: 0; }
 
-.room {
+#scoreboard {
   position: absolute;
-  top: 0;
-  left: 0;
-  color: white;
-  z-index: 100; }
-  .room .taco-cursor {
-    opacity: 0.3;
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    transform: translate(-50%, -50%);
-    background-image: url("/public/taco.png");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    pointer-events: none; }
-  .room .taco-particle {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    background-image: url("/public/taco.png");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    pointer-events: none; }
-  .room #my-taco {
-    opacity: 1; }
+  top: 120px;
+  opacity: 0.7; }
+
+.room .taco-cursor {
+  opacity: 0.3;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  transform: translate(-50%, -50%);
+  background-image: url("/public/taco.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none; }
+
+.room .taco-particle {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background-image: url("/public/taco.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none; }
+
+.room #my-taco {
+  opacity: 1; }
 
 /*# sourceMappingURL=main.build.css.map */
