@@ -1,3 +1,3 @@
 # taco-blaster
 
-hapipal server lite for extra normchore data syncing
+in-memory websocket room and users manager built on nes
