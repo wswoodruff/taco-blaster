@@ -1,5 +1,6 @@
 * {
-  cursor: none; }
+  cursor: none;
+  user-select: none; }
 
 body {
   color: white;
