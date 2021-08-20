@@ -1,4 +1,5 @@
 * {
+  color: white;
   cursor: none;
   user-select: none; }
 
@@ -32,17 +33,23 @@ a {
   position: absolute;
   top: 120px; }
 
-.room .taco-cursor {
-  opacity: 0.3;
+.room #my-taco {
   position: absolute;
+  transform: translate(-50%, -50%); }
+
+.room .taco-cursor {
   width: 80px;
   height: 80px;
-  transform: translate(-50%, -50%);
   background-image: url("/public/taco.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   pointer-events: none; }
+
+.room .ghost-taco {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  opacity: 0.3; }
 
 .room .taco-particle {
   position: absolute;
@@ -52,8 +59,5 @@ a {
   background-size: contain;
   background-repeat: no-repeat;
   pointer-events: none; }
-
-.room #my-taco {
-  opacity: 1; }
 
 /*# sourceMappingURL=main.build.css.map */

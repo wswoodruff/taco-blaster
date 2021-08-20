@@ -1,5 +1,6 @@
 // This is for the tacos
 * {
+    color: white;
     cursor: none;
     user-select: none;
 }
@@ -41,17 +42,24 @@ a {
 }
 
 .room {
-    .taco-cursor {
-        opacity: 0.3;
+    #my-taco {
         position: absolute;
+        transform: translate(-50%, -50%);
+    }
+    // There's a .taco-cursor _inside_ #my-taco so don't set position: absolute here
+    .taco-cursor {
         width: 80px;
         height: 80px;
-        transform: translate(-50%, -50%);
         background-image: url('/public/taco.png');
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
         pointer-events: none;
+    }
+    .ghost-taco {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        opacity: 0.3;
     }
     .taco-particle {
         position: absolute;
@@ -61,8 +69,5 @@ a {
         background-size: contain;
         background-repeat: no-repeat;
         pointer-events: none;
-    }
-    #my-taco {
-        opacity: 1;
     }
 }
