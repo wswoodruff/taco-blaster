@@ -33,6 +33,68 @@ a {
   position: absolute;
   top: 120px; }
 
+#chat-room {
+  border: 1px solid white;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 400px;
+  height: 350px;
+  z-index: 1000;
+  display: flex;
+  flex-flow: column nowrap; }
+
+#chat-room > * {
+  border: 1px solid white;
+  padding: 10px; }
+
+#chat-room-messages {
+  flex-grow: 1;
+  overflow: scroll; }
+
+.chat-msg-container {
+  border: 1px solid white;
+  padding: 5px; }
+
+.chat-msg-container:not(:first-of-type) {
+  margin-top: 20px; }
+
+.chat-msg {
+  display: flex;
+  flex-flow: row nowrap; }
+
+.my-msg * {
+  color: #2ea043 !important; }
+
+.my-msg .chat-msg {
+  display: block;
+  text-align: right; }
+
+.from-time-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between; }
+
+.chat-msg-time {
+  font-size: 12px; }
+
+#chat-room-form {
+  display: flex;
+  flex-flow: row nowrap; }
+
+#chat-room-input {
+  background: black;
+  border: 1px solid white;
+  flex-grow: 1;
+  margin-right: 10px;
+  appearance: none;
+  cursor: text; }
+
+#chat-room-submit {
+  background: black;
+  border: 1px solid white;
+  padding: 3px 6px; }
+
 .room #my-taco {
   position: absolute;
   transform: translate(-50%, -50%); }
